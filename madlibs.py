@@ -1,5 +1,3 @@
-from sample_madlibs import hp, code, zombie, hugergames
-import random
 
 adj = input("adjective: ")
 verb1 = input("VERB: ")
@@ -11,9 +9,6 @@ I love to {verb1}. stay hydrated and {verb2} like you are {famous_person}!)"
 
 print(madlib)
 
-if __name__ == "__main__":
-    m = random.choice([hp, code, zombie, hungergames])
-    m.madlibs()
 
     #I just imported her code in order to test 
     # if __name__ == "__main__": whether a Python script is being run directly or being imported into another script as a module.
