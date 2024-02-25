@@ -1,6 +1,7 @@
 from words import commonWords
 import random
-import string
+import string  #Hangman from scratch
+               #attach the project with comand line
 
 def get_valid_word(commonWords):
 
