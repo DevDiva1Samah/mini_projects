@@ -17,12 +17,12 @@ def hangman():
     alphabet = set(string.ascii_uppercase)
     used_letters = set()   #what the user has guessed
 
-    #getting user input
+    #getting user inpuu
     while len(word_letters) > 0:
         
         #letters used
         #' '.join(['a', 'b', 'cd']) ---> 'a b cd'
-        print("you have used ther=se letters", ' '.join(used_letters))
+        print("you have used these letters", ' '.join(used_letters))
         #what the current word is (ie W - R D)
 
         word_list = [letter if letter in used_letters else '-' for letter in word]

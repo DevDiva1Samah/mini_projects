@@ -1,30 +1,18 @@
+# the player must guess a hidden word by guessing once a letter at time 
+#each correct guess reveals the positions of the letter in the word
+#the player has a limited number of incorrect guesses before the game ends
 import random
+import string
 import words
-import string 
 
 
-def get_valid_word(words):   #here where we choosed the secret word
+def get_valid_word(words):
 
     word = random.choice(words)
+    while ' ' in words or '- ' in words:
+        word = random.choice(words)       
     
-    while (' ' or ',') in words:  #white and underscores
-        return word
+    return word
     
-def Hangman():
 
-    word = get_valid_word(words)   #like here we just call our function
-    letters = set(words)
-    alaphabet = set(string.ascii_uppercase(words))
-    user_letter = ()
-
-    #implement a loop
-    while user_guess_letter:    #to do from scratch again!!!!
-
-
-
-
-
-
-
-    f"you have these lives {} and you spent all you chances"
-   
+def hangman():

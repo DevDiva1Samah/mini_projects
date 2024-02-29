@@ -977,8 +977,4 @@ commonWords =[
       "yes",
       "yesterday",
       "yet",
-      "you",
-      "young"
-    ]
-
-print(commonWords)
+      "you"]
